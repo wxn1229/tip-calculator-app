@@ -5,40 +5,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Tip calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+
 </head>
 <body>
 
-  Bill
+  <div class="container">
+      <div class="title">
+        <h1>SPLI</h1>
+        <h1>TTER</h1>
+      </div>
+      <div class="calculator">
 
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
+        <div class="top">
 
-  Number of People
+          <div class="input bill-input">
 
-  Tip Amount
-  / person
+            <h2>Bill</h2>
+            <div class="input-with-icon">
+              <img src="./images/icon-dollar.svg" alt=""
+              <input type="number">
+            </div>
 
-  Total
-  / person
+          </div>
 
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+          <div class="select-tip">
+            <h2>Select Tip %</h2>
+            <div class="options">
+              <div class="option default"><span>5</span> %</div>
+              <div class="option default"><span>10</span>%</div>
+              <div class="option default"><span>15</span>%</div>
+              <div class="option default"><span>25</span>%</div>
+              <div class="option default"><span>50</span>%</div>
+              <div class="option custom">Custom</div>
+
+            </div>
+          </div>
+          <div class="people">
+            <h2>Number of People</h2>
+            <div class="input-with-icon">
+              <img src="./images/icon-person.svg" alt="">
+              <input type="number">
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="bottom">
+          <div class="result-with-reset">
+            <div class="result">
+              <div class="text">
+                <h3>Tip Amount</h3>
+                <p>/ person</p>
+              </div>
+              <div class="num">
+                $0.00
+              </div>
+            </div>
+            <div class="reset">RESET</div>
+
+          </div>
+          
+        </div>
+      </div>
+    
+    
+
   </div>
+  
+
 </body>
 </html>
