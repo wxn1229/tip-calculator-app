@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  color: hsl(183, 100%, 15%);
+  font-family: "Space Mono";
+  font-size: 24px;
+  font-weight: bold;
+  
+  background-color: hsl(185, 41%, 84%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+
+.container{
+  width: 84%;
+  height: 100%;
+  
+}
+
+.title{
+  height: 16%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1{
+    letter-spacing: 8px;
+    line-height: 1.5;
+  }
+}
+
+.calculator{
+  height: 90%;
+  background-color: white;
+  border-radius: 24px;
+  padding: 20px 30px;
+  input{
+    border: none;
+    outline: none;
+    background-color: hsl(189, 41%, 97%);
+    //color: yellow;
+    color: hsl(183, 100%, 15%);
+
+  } 
+
+  h2{
+    font-size: 14px;
+    color: hsl(186, 14%, 43%);
+  }
+
+  .bottom{
+    width:100%;
+    height: 30%;
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+
+  }
+  
+}
+
