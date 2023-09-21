@@ -86,7 +86,8 @@ body{
  
       &:hover{
         color:hsl(183, 100%, 15%);
-        background-color: hsl(172, 67%, 45%);
+        background-color: hsl(173, 61%, 77%);
+;
 
       }
     }
@@ -112,7 +113,12 @@ body{
     background-color: hsl(189, 41%, 97%);
     //color: yellow;
     color: hsl(183, 100%, 15%);
+    
+    &:focus{
 
+       border: 2px solid hsl(173, 61%, 77%);
+
+      }
   } 
 
   .input-with-icon{
@@ -137,8 +143,8 @@ body{
       font-weight: bold;
       font-size: 24px;
       padding: 10px 20px;
-        font-family: "Space Mono" ;
-      
+      font-family: "Space Mono" ;
+          
     }
   }
 
@@ -153,7 +159,7 @@ body{
     background-color: hsl(183, 100%, 15%);
     color: white;
     border-radius: 14px; 
-    padding: 15px 30px;
+    padding: 15px 25px;
 
     .result-with-reset{
       width: 100%;
@@ -161,6 +167,63 @@ body{
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      
+      .result{
+        height: 76%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        .item{
+          height: 40%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height:100%;
+
+
+            h3{
+              font-weight: 0;
+              font-size: 18px;
+              margin-bottom: 5px;
+            }
+
+            p{
+              font-size: 14px;
+              margin-top: 5px;
+              color: hsl(186, 14%, 43%);
+            }
+            
+          }
+          .num{
+            font-size: 38px;
+            color: hsl(172, 67%, 45%);
+          }
+
+        }
+        
+      }
+
+      .reset{
+        height: 22%; 
+        background-color: hsl(172, 67%, 45%);
+        color: hsl(183, 100%, 15%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        cursor: pointer;
+        &:hover{
+          background-color: hsl(173, 61%, 77%);
+        }
+
+      }
+
+
 
       
     }
