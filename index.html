@@ -37,16 +37,16 @@
           <div class="select-tip">
             <h2>Select Tip %</h2>
             <div class="options">
-              <div class="option default"><span>5</span> %</div>
+              <div class="option default"><span>5</span>%</div>
               <div class="option default"><span>10</span>%</div>
               <div class="option default"><span>15</span>%</div>
               <div class="option default"><span>25</span>%</div>
               <div class="option default"><span>50</span>%</div>
-              <div class="option custom">Custom</div>
+              <input type="number" class = "option custom" placeholder = "Custom" id = "custom">
 
             </div>
           </div>
-          <div class="people">
+          <div class="input people-input">
             <h2>Number of People</h2>
             <div class="input-with-icon">
               <img src="./images/icon-person.svg" alt="">
@@ -58,18 +58,33 @@
         </div>
 
         <div class="bottom">
-          <div class="result-with-reset">
-            <div class="result">
-              <div class="text">
-                <h3>Tip Amount</h3>
-                <p>/ person</p>
-              </div>
-              <div class="num">
-                $0.00
-              </div>
-            </div>
-            <div class="reset">RESET</div>
 
+          <div class="result-with-reset">
+
+            <div class="result">
+
+              <div class="item">
+                <div class="text">
+                  <h3>Tip Amount</h3>
+                  <p>/ person</p>
+                </div>
+                <div class="num">
+                  $0.00
+                </div>
+              <div class="item">
+                <div class="text">
+                  <h3>Total</h3>
+                  <p>/ person</p>
+                </div>
+                <div class="num">
+                  $0.00
+                </div>
+              </div>
+             
+            </div>
+
+
+          <div class="reset">RESET</div>
           </div>
           
         </div>
