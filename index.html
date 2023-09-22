@@ -29,7 +29,7 @@
             <h2>Bill</h2>
             <div class="input-with-icon">
               <img src="./images/icon-dollar.svg" alt="">
-              <input type="number">
+              <input type="number" id = "bill">
             </div>
 
           </div>
@@ -50,7 +50,7 @@
             <h2>Number of People</h2>
             <div class="input-with-icon">
               <img src="./images/icon-person.svg" alt="">
-              <input type="number">
+              <input type="number" id = "people">
             </div>
 
           </div>
@@ -70,7 +70,7 @@
                   <p>/ person</p>
                 </div>
                 <div class="num">
-                  $0.00
+                  $<span id = "tip-amount">0.00</span>
                 </div>
               </div>
               <div class="item">
@@ -79,7 +79,7 @@
                   <p>/ person</p>
                 </div>
                 <div class="num">
-                  $0.00
+                  $<span id = "total">0.00</span>
                 </div>
               </div>
              
@@ -95,6 +95,7 @@
     
 
   </div>
+  <script src = "./index.js"></script>
   
 
 </body>
