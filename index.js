@@ -2,7 +2,12 @@
 
 //funcition block
 function calculate() {
-  isResetable = true
+  if (!isResetable) {
+    reset.style.opacity = "1"
+    reset.style.cursor = "pointer"
+
+    isResetable = true
+  }
   console.log("caling")
   let tipAomunt = 0
   tipAomunt = billValue * tipPercent * 0.01 / num;
@@ -31,7 +36,7 @@ function calculate() {
 let num = 0;
 let billValue = 0
 let isResetable = false
-let tipPercent = 5
+let tipPercent = 100
 
 
 let bill = document.querySelector("#bill")
@@ -80,3 +85,32 @@ custom.addEventListener("change", () => {
   })
 
 })
+
+let reset = document.querySelector(".reset")
+
+reset.style.opacity = "0.4"
+reset.style.cursor = "default"
+
+reset.addEventListener("click", () => {
+  if (isResetable) {
+    billValue = 0
+    num = 0
+    tipPercent = 100
+
+    bill.value = ""
+    Default.forEach(item => {
+      item.style.color = "white"
+      item.style.backgroundColor = "hsl(193, 100%, 15%)"
+    })
+    custom.value = ""
+    people.value = ""
+    reset.style.opacity = "0.4"
+    reset.style.cursor = "default"
+
+
+    isResetable = false
+  }
+})
+
+
+

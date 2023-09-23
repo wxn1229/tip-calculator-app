@@ -35,6 +35,7 @@ body{
   width: 84%;
   height: 100%;
   
+  
 }
 
 .title{
@@ -56,6 +57,10 @@ body{
   background-color: white;
   border-radius: 24px;
   padding: 30px 30px;
+
+  .bill-input{
+    margin-bottom: 24px;
+  }
   
   .options{
     width: 100%;
@@ -149,8 +154,9 @@ body{
   }
 
   h2{
-    font-size: 14px;
+    font-size: 16px;
     color: hsl(186, 14%, 43%);
+    line-height: 2;
   }
 
   .bottom{
@@ -160,6 +166,7 @@ body{
     color: white;
     border-radius: 14px; 
     padding: 15px 25px;
+    margin-top: 30px;
 
     .result-with-reset{
       width: 100%;
@@ -209,7 +216,7 @@ body{
       }
 
       .reset{
-        height: 22%; 
+        height: 60px; 
         background-color: hsl(172, 67%, 45%);
         color: hsl(183, 100%, 15%);
         display: flex;
@@ -232,3 +239,42 @@ body{
   
 }
 
+@media only screen and (min-width: 768px) {
+  .container{
+    width: 1000px;
+    height: 60%;
+  }
+  .title{
+    transform: translateY(-100px);
+  }
+  .calculator{
+    display: flex;
+    justify-content: space-between;
+
+    box-shadow: 10px 10px 10px hsl(175, 39%, 67%);
+    flex-direction: row;
+    .top{
+      height: 100%;
+      width: 48%;
+      .option{
+        width: 30%;
+      }
+    }
+    .bottom{
+      margin-top: 0;
+      height: 100%;
+      width: 48%;
+      .result-with-reset{
+        .result{
+          justify-content: flex-start;
+        }
+        .item{
+          height: 36%;
+        }
+
+      }
+    }
+  }
+
+  
+}
